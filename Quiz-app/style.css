@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ddd;
+}
+
+.app {
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 0 5px;
+}
+
+.app h1 {
+  border-bottom: 2px solid tomato;
+  padding-bottom: 20px;
+}
+
+#answer-btn {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#answer-btn button:hover:not([disabled]) {
+  background: rgba(253, 184, 99, 0.836);
+}
+#answer-btn:disabled {
+  cursor: no-drop;
+}
+
+#answer-btn button {
+  padding: 8px;
+  font-size: 20px;
+  text-align: left;
+  border-radius: 5px;
+}
+#Next {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 20px;
+  border-color: tomato;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: tomato;
+  border: none;
+  outline: none;
+}
+.correct {
+  background: #9aeabc;
+}
+.incorrect {
+  background: #fb1a1a;
+}
