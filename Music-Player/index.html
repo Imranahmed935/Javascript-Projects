@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f3c8168dd6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="./images/468-thumbnail.png" class="media" alt="" />
+        <h1>rabne banadi juri</h1>
+        <p>arjit singh</p>
+
+        <audio id="song">
+          <source
+            src="./music/W. A. Mozart, Symphony No.38 in D major - A Far Cry.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <input type="range" value="0" id="progress" />
+        <div class="controls">
+          <i class="fa-solid fa-backward"></i>
+          <i onclick="playPause()" class="fa-solid fa-play" id="Icon"></i>
+          <i class="fa-solid fa-forward"></i>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

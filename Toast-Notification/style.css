@@ -64,6 +64,7 @@ body {
 .toast.error i {
   color: red;
 }
+
 .toast.invalid i {
   color: rgb(255, 183, 0);
 }
